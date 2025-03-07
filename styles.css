@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    background-image: url("images/home-bg.jpg");
+    color: rgb(18, 235, 29);
+}
+
+.products {
+    background-image: url("images/products-bg.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+}
+
+.benefits {
+    background-image: url("images/benefits-bg.jpg");
+    color:rgb(69, 240, 26);
+    text-align: right;
+}
+
+.reviews {
+    background-image: url("images/reviews-bg.jpg");
+    color:rgb(18, 235, 47);
+    padding:20px;
+    border-radius:10px;
+}
+
+.contact {
+    background-image: url("images/contact-bg.jpg");
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 300px; 
+        margin: auto;
+    }
+    
+    .contact-form label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .contact-form button {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: rgba(238, 236, 236, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: black;
+}
+
+.product p {
+    color: black;
+}
